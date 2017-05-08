@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+form {
+    max-width: 380px;
+  	padding: 15px 35px 45px;
+ 	margin: 0 auto;
+  	border: 1px solid rgba(0,0,0,0.1); 
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 60%;
+    
+}
+
+.container {
+    padding: 16px;
+}
+
+.kirjaudu{
+	text-align: center;
+}
+
+</style>
+<body>
+
+
+<div class="wrapper">
+	<form action="/login.html" method="post">
+		<div class="kirjaudu">
+			<h2>Kirjaudu</h2>
+		</div>
+	
+	  <div class="imgcontainer">
+	    <img src="masse.jpg" alt="Kirjaudu" class="avatar">
+	  </div>
+	
+	  <div class="container">
+	    <label><b>Käyttäjänimi</b></label>
+	    <input type="text" placeholder="Käyttäjänimi" name="username" required>
+	
+	    <label><b>Salasana</b></label>
+	    <input type="password" placeholder="Salasana" name="password" required>
+	        
+	    <button type="submit">Kirjaudu</button>
+	  </div>
+	
+	</form>
+</div>	
+
+</body>
+</html>
